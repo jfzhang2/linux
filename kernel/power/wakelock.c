@@ -32,7 +32,7 @@ struct wakelock {
 	struct list_head	lru;
 #endif
 };
-
+//wakelock的树结构
 static struct rb_root wakelocks_tree = RB_ROOT;
 
 ssize_t pm_show_wakelocks(char *buf, bool show_active)
